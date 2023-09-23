@@ -8,8 +8,8 @@ const Job = ({ job }) => {
     return (
         <div>
             <div className="">
-                <div className="border space-y-3 p-8">
-                    <img src={logo} alt="" className='' />
+                <div className="border rounded-lg space-y-3 p-8">
+                    <img src={logo} alt="" className='w-40' />
                     <h2 className="card-title">{job_title}</h2>
                     <p>{company_name}</p>
                     <div className='flex gap-4'>

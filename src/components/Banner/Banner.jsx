@@ -2,7 +2,7 @@
 const Banner = () => {
     return (
         <div className="bg-[#9873ff26]">
-            <div className="max-w-7xl m-auto hero hero-content flex-col lg:flex-row-reverse">
+            <div className="max-w-6xl m-auto hero hero-content flex-col lg:flex-row-reverse">
                 <img src="./images/user.png" className="w-[616px]" />
                 <div>
                     <h1 className="text-7xl font-bold">One Step <br />
