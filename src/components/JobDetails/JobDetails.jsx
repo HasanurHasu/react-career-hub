@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { AiOutlineDollar } from 'react-icons/ai';
 
 const JobDetails = () => {
     const jobs = useLoaderData();
@@ -20,12 +21,16 @@ const JobDetails = () => {
                 <p>{educational_requirements}</p>
                 <p><span className="text-black font-bold">Experiences:</span></p>
                 <p>{experiences}</p>
-                
+
             </div>
             <div className="border p-4 bg-[#9873ff26]">
-            <h3 className="font-bold">Job Details</h3>
-            
-            <hr className="w-[2px] border" />
+                <h3 className="font-bold">Job Details</h3>
+                <hr className="my-4 border-x-[1px] border-[#7E90FE]" />
+                <p className='flex items-center gap-1'><AiOutlineDollar /> Salary : {salary} (Per Month)</p>
+                <hr className="my-4 border-x-[1px] border-[#7E90FE]" />
+                <div className="flex justify-center mb-6">
+                    <button className="bg-[#9873FF] w-full py-2 px-5 text-lg text-white font-bold rounded">Apply Now</button>
+                </div>
             </div>
         </div>
     );
